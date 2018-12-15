@@ -1,6 +1,4 @@
-import numpy as np
-import pickle 
-from flask import Flask, abort, jsonify, request
+from flask import Flask
 app = Flask(__name__)
 
 @app.route("/")
