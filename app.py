@@ -2,10 +2,7 @@ import numpy as np
 import pickle 
 from flask import Flask, abort, jsonify, request
 app = Flask(__name__)
-def hello():
-    return "Welcom to the class DLB16HT201!!"
 load_model = pickle.load(open("../data/schools.csv","rb"))
-app = Flask(__name__)
 @app.route('/predict', methods=['POST'])
 def predict():
      # Error checking
